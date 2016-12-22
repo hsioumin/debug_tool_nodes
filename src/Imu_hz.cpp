@@ -29,9 +29,9 @@ int duration()
 }
 
 
-void rplidarCallback(const std_msgs::String::ConstPtr& msg)
+void rplidarCallback(const std_msgs::sensor_msgs::Imu) //change message type 
 { 
-	//count hz here(?)
+	//count data(?)
 	;
 }
 
