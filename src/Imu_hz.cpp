@@ -6,13 +6,14 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdint.h>
+#include <pthread.h>
 
 #define n 1000000
 
 using namespace std;
 
 
-int duration()
+publish_Imu()
 {
 	struct timeval detail_time1, detail_time2;
 
@@ -26,6 +27,8 @@ int duration()
 
 	//previous time - now
 	printf("%06ld\n", detail_time2.tv_usec - detail_time1.tv_usec);
+
+	//compute hz here
 }
 
 
