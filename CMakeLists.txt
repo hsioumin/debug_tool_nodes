@@ -138,6 +138,13 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(Imu_hz src/Imu_hz_2.cpp)
+target_link_libraries(Imu_hz ${catkin_LIBRARIES})
+
+
+
 #############
 ## Install ##
 #############
